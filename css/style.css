@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    height: 100%;
+    margin-top: 10px;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    min-height: 100%;
+    background-color: #cfa4ff;}
+
+h4{
+    color: white;
+}    
+
+.grid-container > * {
+    box-shadow: -1px 1px 4px 0px rgba(0, 0, 0, 0.20);
+    border-radius: 4px;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /*MODIFICA MEDIDA*/
+
+}
+
+.header{
+    grid-area: header;
+    background-color: #9a42ff;
+
+}
+.navbar{
+    grid-area: navbar;
+    background-color: #9a42ff;}
+.main{
+    grid-area: main;
+    background-color: #9a42ff;}
+.sidebar{
+    grid-area: sidebar;
+    background-color: #9a42ff;}
+.row_1{
+    grid-area: row_1;
+    background-color: #9a42ff;}
+.row_2{
+    grid-area: row_2;
+    background-color: #9a42ff;}
+.footer{
+    grid-area: footer;
+    background-color: #9a42ff;}
+
+/*--HOVER--*/ 
+
+.header:hover{
+    background-color: #008cff;
+}
+.navbar:hover{
+    background-color: #008cff;
+}
+.main:hover{
+    background-color: #008cff;
+}
+.sidebar:hover{
+    background-color: #008cff;
+}
+.main:hover{
+    background-color: #008cff;
+}
+.row_1:hover{
+    background-color: #008cff;
+}
+.row_2:hover{
+    background-color: #008cff;
+}
+.footer:hover{
+background-color: #008cff;}
+   
+
+
+
+.grid-container{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    display: grid;
+    gap: 10px;
+    grid-template:
+      "header   header   header   header" 300px
+      "navbar   navbar   navbar   sidebar" 300px
+      "main   main   main   sidebar" 300px
+      "row_1   row_1   row_2   row_2" 300px
+      "footer   footer   footer   footer" 300px; 
+}
+
+@media (min-width: 400px) {
+    .grid-container{
+        grid-template:
+        "header" 100px /*altura height*/
+        "navbar" 100px
+        "main" 100px
+        "sidebar"  100px
+        "row_1" 100px
+        "row_2" 100px
+        "footer" 100px;
+    }
+}
+
+@media screen  and (min-width: 900px) {
+    .grid-container{
+        grid-template:
+        "header   header   header   header"
+        "navbar   navbar   navbar   sidebar"
+        "main   main   main   sidebar"
+        "row_1   row_1   row_2   row_2"
+        "footer   footer   footer   footer"; 
+    }
+}
+
+/*WHATSAPP*/
+
+.circulo, .icono{
+    background:#1dd742;
+    border-radius:50px;
+    width: calc(67.5px);
+    height: calc(67.5px);
+    padding: calc(7.5px);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    
+}
+.fa-brands, .fab {
+    font-family: "Font Awesome 6 Brands";
+    font-weight: 400;
+    font-size: 42px;
+    padding-top: 2px;
+    padding-left: 8px;
+    color: white;
+    z-index: 100;
+}
