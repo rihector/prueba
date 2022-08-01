@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+
+    <!-- FONT GOOGLE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;700&display=swap" rel="stylesheet">
+ 
+    <!-- ICON FONT -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!-- NAVBAR CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- NAVBAR JS -->
+    <script defer src="navbar.js"></script>
+
+</head>
+
+<style>
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.text-center {
+    text-align: center!important;
+}
+html, body {
+  height: 100%;
+}
+body {
+    margin: 0;
+    margin-top: 80px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color:#6482FF;
+}
+.form-sign_in {
+    max-width: 330px;
+    padding: 15px;
+}
+.m-auto {
+    margin: auto!important;
+}
+.boton { /*buttom sign in*/
+    width: 80%!important;
+}
+article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+.text-center {
+    text-align: center!important;
+}
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+.form-sign_in input[type="email"] {
+    margin-bottom: -1px;
+    margin-bottom: 5px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+input {
+    writing-mode: horizontal-tb !important;
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ;
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+hoja de estilo del agente de usuario
+label {
+    cursor: default;
+}
+.text-center{
+    text-align: center!important;
+}
+button, input{
+    overflow: visible;
+}
+button, input, optgroup, select, textarea{
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+.btn-group-lg>.btn{
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+}
+.boton, .btn{
+    border: 1px solid #5100ff;
+    border-radius: 5px;
+}
+.boton:hover, .btn:hover, .ficha.hover{
+    background-color: rgba(255, 255, 255, 0.57);
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.btn{
+    background-color: #5100ff;
+    color: white;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn:hover{
+    background-color: #000000;
+    color: white;
+    transition: 0.2s;
+}
+.btn:active{
+    background-color: white;
+    color: #5100ff;
+    transition: 0.2s;
+}
+button, select {
+    text-transform: none;
+}
+.input_checkbox{
+    width: 15px;
+}
+.ficha{
+    width:150px;
+    margin-top: 20px;
+}
+.openclick{
+    text-decoration: none;
+    color: white; 
+}
+.fw-normal{
+    color: black;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+</style>
+<body>
+</head>
+<body class="text-center">
+  
+<main class="form-sign_in boton m-auto">
+<form>
+  <img class="ficha" src="svg/HaeM_ffffff.svg" alt="">
+  <h2 class="fw-normal" >Please sign in</h2>
+
+  <div class="form-floating">
+    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+    <label for="floatingInput">Email address</label>
+  </div>
+  <div class="form-floating">
+    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+    <label for="floatingPassword">Password</label>
+  </div>
+
+  <div class="...">
+    <label>
+      <input type="checkbox" class="input_checkbox" value="remember-me"> Remember me
+    </label>
+  </div>
+  <button class="boton btn" type="submit"><a href="index_haem.html" class="openclick">Sign in</a></button>
+  <p class="text-muted" style="color: black">&copy; 2017–2022</p>
+</form>
+</main>
+
+
+  
+</body>
+</html>
