@@ -1,0 +1,75 @@
+
+  ::-webkit-scrollbar {
+    display: none;
+}
+
+html, body {
+  background-color: black;
+  font-family: sans-serif;
+}
+.container {
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  perspective: 3px;
+}
+section {
+  background-size: cover;
+  color: white;
+  background-color: var(--bg, --color-black);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image {
+    background-position: center center;
+    transform: translateZ(-1px) scale(1.5);
+    /* Force the background image to fill the whole element. */
+    background-size: cover;
+    /* Keep the image from overlapping sibling elements. */
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    transition: 0.5s;
+}
+.box_1, .box_2, .box_3, .box_4  {
+    height: 100vh;
+    box-shadow: 40px 0px 40px 0px rgba(0, 0, 0, 8.0);
+    transition: height 2s;
+}
+.box_1:hover, .box_2:hover, .box_3:hover, .box_4:hover  {
+    height: 80vh;
+    background-color: #0066ff;
+
+}
+.box_1{
+  background-color: #c8c8bc;
+}
+.box_2{
+  background-color: #638a87;
+}
+.box_3{
+  background-color: #384558;
+}
+.box_4{
+  background-color: firebrick;
+}
+.heading {
+    z-index: -1;
+    transform: translateY(-30vh) translateZ(1px) scale(1.5);
+}
+.footer {
+  position: relative;
+  display: block;
+  background-color: black;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;}
+h3 {
+    font-weight: normal;
+    color: var(--color-blue);
+}
+
