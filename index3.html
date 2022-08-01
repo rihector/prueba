@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="pagina_hector.css">
+
+    <!-- FONT GOOGLE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
+
+ 
+    <!-- ICON FONT -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!---https://icons.getbootstrap.com/--->
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-90deg-up" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M4.854 1.146a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L4 2.707V12.5A2.5 2.5 0 0 0 6.5 15h8a.5.5 0 0 0 0-1h-8A1.5 1.5 0 0 1 5 12.5V2.707l3.146 3.147a.5.5 0 1 0 .708-.708l-4-4z"/>
+    </svg>
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Pagina hector</title>
+    <link rel="icon" type="image/x-icon" href="recursos/imagenes/logo_ico.ico">
+  </head>
+  <body>  
+    
+    
+
+  <style>
+
+/*----- carousel -----*/
+.carousel-item {
+    margin-top: 66px; /*----- separa nav y carousel -----*/
+     height: 25rem;/*-----height imagen -----*/
+     background: #000;
+     color: white;
+     position: relative;
+     opacity: 0.8;
+}
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+.over {
+    opacity: 0.2; filter:alpha(opacity=20);
+}
+
+.container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 50px;
+}
+.overlay-image{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+
+}
+/*-- carousel desenfoque--*/
+.blur:hover {filter: blur(5px);
+}
+
+</style>
+
+
+
+
+<!--logo-->		
+<div class="page-head">
+  <a href="#" class="logo">
+  <img src="recursos/imagenes/Duiells.svg" alt="logo"></a>
+
+
+<!--menu-->	
+  <nav class="menu">
+    <button class="button button1"><i class="bi bi-house"style="padding-right: 5px"></i>Inicio</button>
+    <button class="button button1"><i class="bi bi-bag"style="padding-right: 5px"></i>Tienda</button>
+    <button class="button button1"><i class="bi bi-bandaid"style="padding-right: 5px"></i>Veterinario</button>
+    <button class="button button1"><i class="bi bi-joystick"style="padding-right: 5px"></i>Piensos</button>
+    <button class="button button1"><i class="bi bi-mic"style="padding-right: 5px"></i>Partners</button>
+    <button class="button button1"><i class="bi bi-person-rolodex"style="padding-right: 5px"></i>contacto</button>
+  </nav>	
+</div>
+
+<!--CAROUSEL-->
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-interval="2000">
+        <img src="recursos/imagenes/slide-1.jpeg" class="d-block w-100 blur" alt="...">
+        <div class="container">
+            <h1>Carousel Bootstrap 01</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <a href="https://getbootstrap.com/docs/4.0/components/carousel/" class="btn btn-lg btn-primary">
+                Ver la web
+            </a>
+        </div>
+      </div>
+      <div class="carousel-item" data-interval="1000">
+        <img src="recursos/imagenes/slide-2.jpeg" class="d-block w-100 blur" alt="...">
+        <div class="container">
+            <h1>Carousel Bootstrap 01</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <a href="#" class="btn btn-lg btn-primary">
+                Sign up today
+            </a>
+        </div>
+      </div>
+      <div class="carousel-item"data-interval="500">
+        <img src="imagenes/slide-3.jpeg" class="d-block w-100 blur" alt="...">
+        <div class="container">
+            <h1>Third Example Headline</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <a href="https://getbootstrap.com/docs/4.0/components/carousel/" class="btn btn-lg btn-primary">
+                Carousel Bootstrap 01
+            </a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+<!--FIN DE CAROUSEL--> 
+
+<main class="page-container">
+
+<article class="page">
+    
+  <!--PRIMERA POSICION-->   
+    <h1>¿Qué son las Google Fonts y cómo las puedo utilizar en mis proyectos?</h1>	
+    
+    <div class="date"><i class="bi bi-calendar-week" style="padding-right: 5px"></i><strong>13 de de junio de 2022</strong></div>
+    
+    <img src="recursos/imagenes/img_comida.png" alt="Comida" class="Fetured-image" width="800" height="304">
+      
+    <p>Cuando desarrollamos un proyecto web, una de las decisiones que hemos de tomar es la de la tipografía que vamos a utilizar en cada una de sus diferentes partes o secciones. Esto es importante, porque la fuente que utilicemos para los textos determinará, en buena medida, la usabilidad de la aplicación o de la web.
+
+      La tipografía que elijamos va a tener una gran importancia para transmitir ideas, información y valores. Con la tipografía podemos definir la identidad corporativa de la empresa, reforzando el mensaje que queremos transmitir. Google Fonts es uno de los recursos más interesantes en cuestiones de tipografía.</p>    
+  
+  
+        <h2>¿Qué es Google Fonts?</h2>
+
+        <p>Google fonts
+¿Qué son las Google Fonts y cómo las puedo utilizar en mis proyectos?
+Publicado el 17/06/2021 por Fernán García de Zúñiga en Diseño web , Programación y BBDD Compartir: Email Facebook LinkedIn Twitter
+Cuando desarrollamos un proyecto web, una de las decisiones que hemos de tomar es la de la tipografía que vamos a utilizar en cada una de sus diferentes partes o secciones.
+Esto es importante, porque la fuente que utilicemos para los textos determinará, en buena medida, la usabilidad de la aplicación o de la web.
+La tipografía que elijamos va a tener una gran importancia para transmitir ideas, información y valores.
+Con la tipografía podemos definir la identidad corporativa de la empresa, reforzando el mensaje que queremos transmitir.
+Google Fonts es uno de los recursos más interesantes en cuestiones de tipografía...la <a href="https://fonts.google.com/"> Ver en la web Fonts Google</a>.</p>
+
+   
+    <!--SEGUNDA POSICION-->         
+        <h1>How TO - Add Image Effects</h1>	
+    
+    <div class="date"><i class="bi bi-calendar-week" style="padding-right: 5px"></i><strong>13 de de junio de 2022</strong></div>
+    <br>
+
+
+    <div class="Fetured-image xtra blur center">
+      <img src="recursos/imagenes/flor.jpeg" alt="Forest" style="width:100%;">
+      <p>Image Filters<br>blur</p>
+    </div>
+
+    <div class="Fetured-image xtra brightness">
+      <img src="recursos/imagenes/flor.jpeg" alt="Forest" style="width:100%;">
+      <p>Image Filters<br>brightness</p>
+    </div>
+
+    <div class="Fetured-image xtra contrast">
+      <img src="recursos/imagenes/flor.jpeg" alt="Forest" style="width:100%;">
+      <p>Image Filters<br>contrast</p>
+    </div>
+    <div class="Fetured-image xtra grayscale">
+      <img src="recursos/imagenes/flor.jpeg" alt="Forest" style="width:100%;">
+      <p>Image Filters<br>grayscale</p>
+    </div>
+
+    <div class="Fetured-image xtra huerotate">
+      <img src="recursos/imagenes/flor.jpeg" alt="Forest" style="width:100%;">
+      <p>Image Filters<br>huerotate</p>
+    </div>
+
+    <div class="Fetured-image xtra invert">
+      <img src="recursos/imagenes/flor.jpeg" alt="Forest" style="width:100%;">
+      <p>Image Filters<br>invert</p>
+    </div>
+    <div class="Fetured-image xtra opacity">
+      <img src="recursos/imagenes/flor.jpeg" alt="Forest" style="width:100%;">
+      <p>Image Filters<br>opacity</p>
+    </div>
+
+    <div class="Fetured-image xtra saturate">
+      <img src="recursos/imagenes/flor.jpeg" alt="Forest" style="width:100%;">
+      <p>Image Filters<br>saturate</p>
+    </div>
+
+    <div class="Fetured-image xtra sepia">
+      <img src="recursos/imagenes/flor.jpeg" alt="Forest" style="width:100%;">
+      <p>Image Filters<br>sepia</p>
+    </div>
+<p>PARRAFO DERECHO Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu varius magna. Mauris dapibus facilisis enim, ut vestibulum lorem vulputate id. Nullam cursus id ipsum imperdiet lacinia. Mauris congue neque sit amet lorem mollis cursus nec quis ligula. Nullam vestibulum ullamcorper quam, malesuada tincidunt dui facilisis id. In porta vehicula augue, ac ornare diam tempor et. Donec dictum velit a justo facilisis bibendum <>PARRAFO IZQUIERDA Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu varius magna. Mauris dapibus facilisis enim, ut vestibulum lorem vulputate id. Nullam cursus id ipsum imperdiet lacinia. Mauris congue neque sit amet lorem mollis cursus nec quis ligula. Nullam vestibulum ullamcorper quam, malesuada tincidunt dui facilisis id. In porta vehicula augue, ac ornare diam tempor et. Donec dictum velit a justo facilisis bibendum at ac ligula <a href="https://www.w3schools.com/howto/howto_css_image_effects.asp"> Ver en la web W3Schools</a>.</p>	
+        
+  
+  
+        <h2>Soy un subtitulo</h2>
+
+        <p>PARRAFO JUSTFICANTE Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu varius magna. Mauris dapibus facilisis enim, ut vestibulum lorem vulputate id. Nullam cursus id ipsum imperdiet lacinia. Mauris congue neque sit amet lorem mollis cursus nec quis ligula. Nullam vestibulum ullamcorper quam, malesuada tincidunt dui facilisis id. In porta vehicula augue, ac ornare diam tempor et. Donec dictum velit a justo facilisis bibendum at ac ligula.</p>
+        
+<!--TERCERA POSICION-->         
+        
+<h1>Cómo insertar un mapa de<br>Google Maps en web</h1>	
+    
+<div class="date"><i class="bi bi-calendar-week" style="padding-right: 5px"></i><strong>13 de de junio de 2022</strong></div>
+<!----MAPA GOOGLE-->
+<div id="map" style="width: 800px; height:304px">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.706183918104!2d-3.628697985104706!3d40.43750446230056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422f0b64a30ff3%3A0xba4f38efaa170197!2sC.%20de%20Rufino%20Gonz%C3%A1lez%2C%2040%2C%2028037%20Madrid!5e0!3m2!1ses!2ses!4v1654870307706!5m2!1ses!2ses" width="800" height="304" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+  
+<p>c Nam eu varius magna. Mauris dapibus facilisis enim, ut vestibulum lorem vulputate id. Nullam cursus id ipsum imperdiet lacinia. Mauris congue neque sit amet lorem mollis cursus nec quis ligula. Nullam vestibulum ullamcorper quam, malesuada tincidunt dui facilisis id. In porta vehicula augue, ac ornare diam tempor et. Donec dictum velit a justo facilisis bibendum at ac ligula.</p>
+
+
+<!--CUARTA POSICION-->         
+        
+        <h1>¿Cómo usar Icon Font en HTML?</h1>	
+    
+    <div class="date"><i class="bi bi-calendar-week" style="padding-right: 5px"></i><strong>13 de de junio de 2022</strong></div>
+<p>Las fuentes de iconos te permiten convertir iconos vectoriales en fuentes web. Esto significa que puedes mostrar iconos vectoriales en tu sitio y modificarlos con CSS. Comprueba esta página para aprender a usar las fuentes de iconos con Flaticon..</p>
+   </div>
+      
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu varius magna. Mauris dapibus facilisis enim, ut vestibulum lorem vulputate id. Nullam cursus id ipsum imperdiet lacinia. Mauris congue neque sit amet lorem mollis cursus nec quis ligula. Nullam vestibulum ullamcorper quam, malesuada tincidunt dui facilisis id. In porta vehicula augue, ac ornare diam tempor et. Donec dictum velit a justo facilisis bibendum at ac ligula.</p>	
+        
+  
+    <!--QUINTA POSICION-->         
+        
+    <div class="tres-cuadros-all">  
+     
+      <div class="box-body">  
+          
+        <div class="col1">
+          <img src="recursos/imagenes/icons8-reloj.svg" alt="Heart" style="padding:30px 0 10px 0;width:100px">
+          <b></b>
+          <div class="list-group-item2 py-3">
+            <div class="pb-2">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+        </div>
+          <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
+
+      </div> 
+          
+          <div class="col2">
+            <img src="recursos/imagenes/1159724.svg " alt="Heart" style="padding:30px 0 10px 0;width:100px">
+            <b></b>
+            <div class="list-group-item2 py-3">
+              <div class="pb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+              </div>
+          </div>
+            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
+
+          </div>
+          
+          <div class="col3">
+            <img src="recursos/imagenes/1370638.svg" alt="Heart" style="padding:30px 0 10px 0;width:100px">
+            <b></b>
+            <div class="list-group-item2 py-3">
+              <div class="pb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
+              </div>
+          </div>
+            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
+
+          </div> 
+        </div>
+    </div>
+
+
+
+        <div class="flex-container">
+
+<!-- Content -->
+          <section class="content">
+              <h3>CONTENT SECTION</h3>
+              
+        <h1>Este es el titulo de un articulo de este sitio</h1>	
+    
+        <div class="date"><i class="bi bi-calendar-week" style="padding-right: 5px"></i><strong>13 de de junio de 2022</strong></div>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum convallis nulla neque, vitae ultrices nisl tempor vel. Aliquam id ligula nibh. Mauris ut nulla rhoncus nunc rhoncus dapibus. Nulla luctus fringilla augue, ac aliquam leo mattis a. Ut non mattis metus. Sed pharetra sem vel tincidunt tristique. Sed fermentum tincidunt justo, sit amet auctor sapien elementum non. Nunc auctor a urna sit amet hendrerit. Etiam ac lobortis eros. Aliquam est enim, ornare et ante scelerisque, tempor bibendum velit. Suspendisse potenti. Maecenas dapibus libero ac metus gravida, a facilisis dolor malesuada. Nunc in congue velit. Pellentesque a arcu quis est rutrum gravida sed quis nibh. Pellentesque lobortis justo magna, at aliquam dolor auctor non.</p>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum convallis nulla neque, vitae ultrices nisl tempor vel. Aliquam id ligula nibh. Mauris ut nulla rhoncus nunc rhoncus dapibus. Nulla luctus fringilla augue, ac aliquam leo mattis a. Ut non mattis metus. Sed pharetra sem vel tincidunt tristique. Sed fermentum tincidunt justo, sit amet auctor sapien elementum non. Nunc auctor a urna sit amet hendrerit. Etiam ac lobortis eros. Aliquam est enim, ornare et ante scelerisque, tempor bibendum velit. Suspendisse potenti. Maecenas dapibus libero ac metus gravida, a facilisis dolor malesuada. Nunc in congue velit. Pellentesque a arcu quis est rutrum gravida sed quis nibh. Pellentesque lobortis justo magna, at aliquam dolor auctor non.</p>
+<!----VIDEOS YOUTUBE-->
+             <iframe width="430" height="315" src="https://www.youtube.com/embed/puCG51NX5sE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+          </section>
+       
+<!-- Sidebar -->
+          <aside class="sidebar">
+            <h3>SIDEBAR ASIDE</h3>
+            
+        <h1>Este es el titulo de un articulo de este sitio</h1>	
+    
+        <div class="date"><i class="bi bi-calendar-week" style="padding-right: 5px"></i><strong>13 de de junio de 2022</strong></div>
+        
+        
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum convallis nulla neque, vitae ultrices nisl tempor vel. Aliquam id ligula nibh. Mauris ut nulla rhoncus nunc rhoncus dapibus. Nulla luctus fringilla augue, ac aliquam leo mattis a. Ut non mattis metus. Sed pharetra sem vel tincidunt tristique. Sed fermentum tincidunt justo, sit amet auctor sapien elementum non. Nunc auctor a urna sit amet hendrerit. Etiam ac lobortis eros. Aliquam est enim, ornare et ante scelerisque, tempor bibendum velit. Suspendisse potenti. Maecenas dapibus libero ac metus gravida, a facilisis dolor malesuada. Nunc in congue velit. Pellentesque a arcu quis est rutrum gravida sed quis nibh. Pellentesque lobortis justo magna, at aliquam dolor auctor non.</p>
+          </aside>
+
+
+        
+</article>
+
+
+
+
+<!-----FORMULARIO------>
+<div class="section form">
+  <form id="form"
+      action="maito:direccion@correo.com" method="post"
+      enctype="text/plain">
+
+  <h1>Este es el titulo de un articulo de este sitio</h1>	
+  <tr height="50">
+    <input type="text" value="Nombre" name="nombre" size="25" maxlength="25" class="input"></td>
+    <input type="text" value="Apellido" name="apellidos" size="25" maxlength="25" class="input"></td>
+    <br>
+    <tr height="50">
+ 
+      <td>Hombre<input type="radio" name="sexo" value="H" class="radio">
+          Mujer<input type="radio" name="sexo" value="M" class="radio">
+          Estado civil
+          <select name="estado_civil" class="input">
+              <option>Soltero
+              <option>Casado  
+              <option>Divorciado
+              <option>Otro
+          </select>
+      </td>
+    </tr>
+    <br>
+    <input type="text" value="Dirección" name="nombre" size="58" maxlength="58" class="input"></td>
+    <br>
+    <tr height="50">
+    
+    <textarea value="Comentario" name="coment" rows="5" cols="60" class="input"></textarea>
+    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+    </td>
+  </tr>
+  <br>
+  </tr>
+  <input type="submit" value="     Enviar     " a href="#" class="btx btx-lg btx-primarx"></a> <input type="reset" value="     Borrar     " a href="#"
+  class="btx btx-lg btx-primarx"></a>
+
+</form>
+</div>
+<!-----FIN DE FORMULARIO------>
+
+<!-----FOOTER------>
+<footer>
+  <div class="container-footer-all">  
+     
+     <div class="container-body">  
+         <div class="columna1">
+         <h2>Mas información de la compañía</h2>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum convallis nulla neque, vitae ultrices nisl tempor vel. Aliquam id ligula nibh. Mauris ut nulla rhoncus nunc rhoncus dapibus. Nulla luctus fringilla augue, ac aliquam leo mattis a. Ut non mattis metus. Sed pharetra sem vel tincidunt tristique. Sed fermentum tincidunt justo, sit amet auctor sapien elementum non. Nunc auctor a urna sit amet hendrerit.</p>
+         </div>  
+         <div class="columna2">
+            <h2>Redes Sociales</h2>
+            <div class="row">
+                <img src="recursos/imagenes/facebook_w.svg"><label>Siguenos en Facebook</label>
+            </div>
+            <div class="row">
+                <img src="recursos/imagenes/twitter_w.svg"> 
+                <label>Siguenos en Twitter</label>
+            </div>
+            <div class="row">
+                <img src="recursos/imagenes/instagram_w.svg"> 
+                <label>Siguenos en Instagram</label>
+            </div>
+            <div class="row">
+                <img src="recursos/imagenes/youtube-play_w.svg"> 
+                <label>Siguenos en YouTube</label>
+            </div>
+            <div class="row">
+                <img src="recursos/imagenes/pinterest_w.svg"> 
+                <label>Siguenos en Pinterest</label>
+            </div>
+         </div>  
+         
+         <div class="columna3">
+             <h2>Información Contactos</h2>
+             <div class="row">
+                 <img src="recursos/imagenes/home_w.svg"> 
+                 <label>
+                 Madrid, España
+                 Albufera
+                 Centro Cultural Salmantino
+                 </label>
+             </div>  
+             <div class="row">
+                 <img src="recursos/imagenes/mobil_w.svg"> 
+                 <label>+34 653212345</label>
+             </div>  
+             <div class="row">
+                 <img src="recursos/imagenes/mail_w.svg"> 
+                 <label>colegio@gmail.com</label>
+             </div>  
+         
+         </div>  
+       </div>
+   </div>           
+   
+   <div class="container-footer">
+     <div class="footer">
+             <div class="copyright">
+            Copyright ©2021 Todos los derechos reservados | <a href="salmantino.com">salmantino.com</a>
+          </div>
+          <div class="information">
+              <a href="">Política de Privacidad</a>|
+              <a href="">Términos y Condiciones</a>|
+              <a href="/">Aviso Legal</a>|
+              <a href="/">Quienes somos</a>|
+              <a href="/">Contactar</a>
+          </div>
+      </div>
+    </div>
+</footer>  
+
+
+
+
+
+
+<script src="https://cdn.jsdlivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+ 
+
+<script src="https://strackpath.bootstrap.com/bootstrap/5.0.0-alphal/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF630JCXdXDipiYWBnvTL9Y9/TRLw5wlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+
+<!-- JavaScript Bundle with Popper ICON FONT -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body>
+</html>
